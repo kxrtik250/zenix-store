@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Protected Zenix Store admin dashboard for order review.">
+  <title>Admin | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="admin.js" defer></script>
+</head>
+<body data-page="admin">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <p class="eyebrow">Operations</p>
+        <h1>Admin dashboard</h1>
+        <p>Protected order overview for authorized store operators.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container" id="adminContent"></div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Create your Zenix Store account.">
+  <title>Register | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="auth.js" defer></script>
+</head>
+<body data-page="register">
+  <div id="siteHeader"></div>
+
+  <main class="auth-shell">
+    <form class="panel" id="registerForm" novalidate>
+      <p class="eyebrow">New account</p>
+      <h1>Create account</h1>
+      <p class="panel-subtitle">Use a strong password with at least one letter and one number.</p>
+      <div class="field">
+        <label for="registerName">Full name</label>
+        <input id="registerName" name="name" autocomplete="name" required>
+        <span class="field-error"></span>
+      </div>
+      <div class="field">
+        <label for="registerEmail">Email</label>
+        <input id="registerEmail" name="email" type="email" autocomplete="email" required>
+        <span class="field-error"></span>
+      </div>
+      <div class="field">
+        <label for="registerPassword">Password</label>
+        <input id="registerPassword" name="password" type="password" autocomplete="new-password" required>
+        <span class="field-error"></span>
+      </div>
+      <div class="field">
+        <label for="registerConfirm">Confirm password</label>
+        <input id="registerConfirm" name="confirm" type="password" autocomplete="new-password" required>
+        <span class="field-error"></span>
+      </div>
+      <button class="button primary" type="submit">Create account</button>
+      <div class="auth-links">
+        <a href="login.html">Already have an account?</a>
+      </div>
+    </form>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review your Zenix Store order history and invoices.">
+  <title>Orders | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="orders.js" defer></script>
+</head>
+<body data-page="orders">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <p class="eyebrow">Account</p>
+        <h1>Order history</h1>
+        <p>Track every order placed from your signed-in Zenix account.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="order-list" id="orderHistory"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

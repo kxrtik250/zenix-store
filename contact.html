@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Zenix Store support.">
+  <title>Contact | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="contact.js" defer></script>
+</head>
+<body data-page="contact">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <p class="eyebrow">Support</p>
+        <h1>Contact Zenix</h1>
+        <p>Send a support request, partnership note, or product question.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container contact-grid">
+        <form class="panel" id="contactForm" novalidate>
+          <h2>Send a message</h2>
+          <div class="form-grid">
+            <div class="field">
+              <label for="contactName">Name</label>
+              <input id="contactName" name="name" autocomplete="name" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="contactEmail">Email</label>
+              <input id="contactEmail" name="email" type="email" autocomplete="email" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field full">
+              <label for="contactSubject">Subject</label>
+              <input id="contactSubject" name="subject" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field full">
+              <label for="contactMessage">Message</label>
+              <textarea id="contactMessage" name="message" required></textarea>
+              <span class="field-error"></span>
+            </div>
+          </div>
+          <button class="button primary" type="submit">Send message</button>
+        </form>
+
+        <aside class="panel">
+          <h2>Store support</h2>
+          <p class="panel-subtitle">This demo stores support requests locally in your browser for review during testing.</p>
+          <div class="summary-list">
+            <div class="summary-row"><span>Email</span><strong>support@zenix.store</strong></div>
+            <div class="summary-row"><span>Hours</span><strong>Mon-Sat, 9 AM-7 PM</strong></div>
+            <div class="summary-row"><span>Response</span><strong>Within 24 hours</strong></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zenix Store error page.">
+  <title>Server Error | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body data-page="500">
+  <div id="siteHeader"></div>
+
+  <main class="page-section">
+    <div class="container">
+      <section class="error-panel">
+        <p class="eyebrow">500</p>
+        <h1>Something went wrong</h1>
+        <p>The storefront hit an unexpected issue. Try again from the catalog or return home.</p>
+        <div class="page-actions">
+          <a class="button primary" href="products.html">Open catalog</a>
+          <a class="button ghost" href="contact.html">Contact support</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

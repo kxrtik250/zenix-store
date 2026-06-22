@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse the complete Zenix Store product catalog with search, filters, and sorting.">
+  <title>Products | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body data-page="products">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <p class="eyebrow">Catalog</p>
+        <h1>Product listing</h1>
+        <p>Search, sort, and filter the current Zenix collection in one responsive storefront.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container listing-layout">
+        <aside class="filters-panel" aria-label="Product filters">
+          <h2>Filters</h2>
+          <div class="filter-group">
+            <label for="searchInput">Search</label>
+            <input id="searchInput" type="search" placeholder="Search products">
+          </div>
+          <div class="filter-group">
+            <span>Category</span>
+            <div class="chip-row" id="categoryFilters"></div>
+          </div>
+          <div class="filter-group">
+            <label for="priceFilter">Price</label>
+            <select id="priceFilter">
+              <option value="all">All prices</option>
+              <option value="0-5000">Under INR 5,000</option>
+              <option value="5000-20000">INR 5,000 - INR 20,000</option>
+              <option value="20000-80000">INR 20,000 - INR 80,000</option>
+              <option value="80000+">INR 80,000+</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <button class="button ghost" type="button" id="resetFilters">Reset filters</button>
+          </div>
+        </aside>
+
+        <div>
+          <div class="listing-header">
+            <div>
+              <h2 id="productCount">Products</h2>
+              <p class="helper-text" id="activeFilters">Showing all products</p>
+            </div>
+            <div class="toolbar">
+              <div class="field">
+                <label for="sortSelect">Sort</label>
+                <select id="sortSelect">
+                  <option value="featured">Featured</option>
+                  <option value="priceLow">Price: low to high</option>
+                  <option value="priceHigh">Price: high to low</option>
+                  <option value="nameAZ">Name: A to Z</option>
+                  <option value="rating">Highest rated</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="product-grid" id="productsGrid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

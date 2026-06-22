@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Complete your Zenix Store checkout with validated shipping and payment details.">
+  <title>Checkout | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="checkout.js" defer></script>
+</head>
+<body data-page="checkout">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <p class="eyebrow">Checkout</p>
+        <h1>Secure checkout</h1>
+        <p>Confirm your shipping details and place a demo order without storing sensitive payment data.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container two-column">
+        <form class="panel" id="checkoutForm" novalidate>
+          <h2>Delivery details</h2>
+          <p class="panel-subtitle">Your profile can prefill these fields after sign in.</p>
+          <div class="form-grid">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input id="name" name="name" autocomplete="name" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" autocomplete="tel" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="city">City</label>
+              <input id="city" name="city" autocomplete="address-level2" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field full">
+              <label for="address">Delivery address</label>
+              <textarea id="address" name="address" autocomplete="street-address" required></textarea>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="pincode">PIN code</label>
+              <input id="pincode" name="pincode" inputmode="numeric" autocomplete="postal-code" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="field">
+              <label for="paymentMethod">Payment method</label>
+              <select id="paymentMethod" name="paymentMethod" required>
+                <option value="card">Card ending entry</option>
+                <option value="upi">UPI</option>
+                <option value="cod">Cash on delivery</option>
+              </select>
+              <span class="field-error"></span>
+            </div>
+            <div class="field" id="cardField">
+              <label for="cardLast4">Card last 4 digits</label>
+              <input id="cardLast4" name="cardLast4" inputmode="numeric" maxlength="4" placeholder="1234">
+              <span class="field-error"></span>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button class="button primary" type="submit">Place order</button>
+            <a class="button ghost" href="cart.html">Back to cart</a>
+          </div>
+        </form>
+
+        <aside class="summary-panel" aria-label="Checkout summary">
+          <h2>Order total</h2>
+          <div class="field">
+            <label for="couponInput">Coupon code</label>
+            <input id="couponInput" type="text" autocomplete="off" placeholder="SAVE10">
+            <span class="field-error" id="couponMsg"></span>
+          </div>
+          <div class="summary-list" id="checkoutSummary"></div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

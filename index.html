@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zenix Store is a polished demo ecommerce storefront for premium tech, fashion, beauty, furniture, and home essentials.">
+  <title>Zenix Store | Curated Ecommerce</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="home.js" defer></script>
+</head>
+<body data-page="home">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="hero" aria-label="Zenix Store">
+      <div class="hero-content">
+        <p class="eyebrow">Premium essentials delivered simply</p>
+        <h1>Zenix Store</h1>
+        <p>Shop a focused collection of electronics, fashion, beauty, furniture, and home pieces with a faster cart, cleaner checkout, and saved order history.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="products.html">Shop products</a>
+          <a class="button ghost" href="#featured">View featured</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container stat-grid" aria-label="Store highlights">
+        <div class="stat"><strong>16</strong><span>Curated products</span></div>
+        <div class="stat"><strong>5</strong><span>Shopping categories</span></div>
+        <div class="stat"><strong>18%</strong><span>GST calculated at checkout</span></div>
+        <div class="stat"><strong>24/7</strong><span>Self-service order history</span></div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Shop by category</p>
+            <h2>Browse the collection</h2>
+            <p>Move quickly from discovery to checkout with search, filters, wishlist, and saved account details.</p>
+          </div>
+          <a class="text-button" href="products.html">All products</a>
+        </div>
+        <div class="category-grid" id="homeCategories"></div>
+      </div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured picks</p>
+            <h2>Popular right now</h2>
+            <p>Best-selling products selected from the current Zenix catalog.</p>
+          </div>
+          <a class="text-button" href="products.html">Browse more</a>
+        </div>
+        <div class="product-grid" id="featuredProducts"></div>
+      </div>
+    </section>
+
+    <section class="section soft">
+      <div class="container feature-grid">
+        <div class="feature-tile">
+          <h3>Fast checkout</h3>
+          <p>Saved profile details, live totals, coupon validation, and order confirmation.</p>
+        </div>
+        <div class="feature-tile">
+          <h3>Personal lists</h3>
+          <p>Keep favorites in your wishlist and move them into the cart when you are ready.</p>
+        </div>
+        <div class="feature-tile">
+          <h3>Responsive store</h3>
+          <p>Layouts are tuned for mobile, tablet, and desktop shopping sessions.</p>
+        </div>
+        <div class="feature-tile">
+          <h3>Clean records</h3>
+          <p>Invoices and order history are stored per signed-in account in this static demo.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <form class="panel" id="newsletterForm" novalidate>
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Member updates</p>
+              <h2>Get new drop alerts</h2>
+              <p>Receive occasional product launches and coupon updates from Zenix.</p>
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="field">
+              <label for="newsletterEmail">Email address</label>
+              <input id="newsletterEmail" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+              <span class="field-error"></span>
+            </div>
+            <div class="form-actions">
+              <button class="button primary" type="submit">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

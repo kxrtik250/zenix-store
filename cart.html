@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Review your Zenix Store shopping cart and order total.">
+  <title>Cart | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="cart.js" defer></script>
+</head>
+<body data-page="cart">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <p class="eyebrow">Shopping cart</p>
+        <h1>Your cart</h1>
+        <p>Adjust quantities, review totals, and continue to checkout when everything looks right.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container two-column">
+        <div class="panel">
+          <div class="listing-header">
+            <h2>Items</h2>
+            <button class="text-button" type="button" id="clearCartBtn">Clear cart</button>
+          </div>
+          <div class="cart-list" id="cartItems"></div>
+        </div>
+
+        <aside class="summary-panel" aria-label="Order summary">
+          <h2>Order summary</h2>
+          <div class="field">
+            <label for="cartCoupon">Coupon code</label>
+            <input id="cartCoupon" type="text" autocomplete="off" placeholder="SAVE10">
+            <span class="field-error" id="couponMessage"></span>
+          </div>
+          <div class="summary-list" id="cartSummary"></div>
+          <div class="cart-actions">
+            <a class="button ghost" href="products.html">Keep shopping</a>
+            <a class="button primary" id="checkoutLink" href="checkout.html">Checkout</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="View and manage your Zenix Store wishlist.">
+  <title>Wishlist | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="wishlist.js" defer></script>
+</head>
+<body data-page="wishlist">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-hero compact">
+      <div class="container">
+        <p class="eyebrow">Saved items</p>
+        <h1>Wishlist</h1>
+        <p>Keep products on deck and move them into your cart whenever you are ready.</p>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <div class="product-grid" id="wishlistItems"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

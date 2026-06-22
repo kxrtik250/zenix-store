@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="View Zenix Store product details, stock, features, and related products.">
+  <title>Product Details | Zenix Store</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="product.js" defer></script>
+</head>
+<body data-page="product">
+  <div id="siteHeader"></div>
+
+  <main>
+    <section class="page-section">
+      <div class="container" id="productDetail"></div>
+    </section>
+
+    <section class="section soft">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Related</p>
+            <h2>More to consider</h2>
+          </div>
+          <a class="text-button" href="products.html">All products</a>
+        </div>
+        <div class="product-grid" id="relatedProducts"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="siteFooter"></div>
+  <div id="toastRegion" class="toast-region" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
